@@ -1,6 +1,5 @@
 package Files;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ProjectRunner {
@@ -15,17 +14,21 @@ public class ProjectRunner {
 
 	}
 	 public void mainMenu() {
+		 
 		 System.out.println("Main Menu :");
+		 
 		 fileCreationRunner = new FileCreationRunner();
 		 this.fileCreationRunner.createDirectory();
 		 
 		 Scanner input = new Scanner(System.in);
 		 int mainSelection;
 		 
+		 //welcome screen
 		 System.out.println("****************************");
-		 System.out.println("****Welcome to LockedMe.com****"  + "This application was developed by Shraddha");
+		 System.out.println("** **Welcome to LockedMe.com****"  + "This application was developed by Shraddha");
 		 System.out.println("***Full stack developer****");
 		 
+		 //display options
 		 do {
 			    System.out.println("Choose from these options");
 				System.out.println("1. Display all file names in ascending order");
